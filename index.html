@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en" id="html-root">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Amine Baik — Développeur Python & Web. Scraping, automatisation, bases de données, développement web. Disponible en freelance."/>
+  <meta name="robots" content="index, follow"/>
+  <meta property="og:title" content="Amine Baik — Python & Web Developer"/>
+  <meta property="og:description" content="Python & Web Developer available for freelance missions. Scraping, automation, databases, web development."/>
+  <meta property="og:type" content="website"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Amine Baik — Python & Web Developer"/>
+  <link rel="canonical" href="https://aminebaik.github.io/"/>
+  <title>Amine Baik — Python & Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+<!-- NAV -->
+<nav role="navigation" aria-label="Main navigation">
+  <a href="#hero" class="logo" aria-label="Amine Baik — Home">Amine Baik</a>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <ul id="nav-menu">
+    <li><a href="#skills"     data-fr="Compétences" data-en="Skills">Skills</a></li>
+    <li><a href="#projects"   data-fr="Projets"     data-en="Projects">Projects</a></li>
+    <li><a href="#experience" data-fr="Expérience"  data-en="Experience">Experience</a></li>
+    <li><a href="#about"      data-fr="À propos"    data-en="About">About</a></li>
+    <li><a href="#contact"    data-fr="Contact"     data-en="Contact">Contact</a></li>
+    <li>
+      <div class="lang-switch" role="group" aria-label="Language selector">
+        <button id="btn-fr" onclick="setLang('fr')" aria-label="Passer en français">FR</button>
+        <button id="btn-en" onclick="setLang('en')" aria-label="Switch to English">EN</button>
+      </div>
+    </li>
+  </ul>
+</nav>
+
+<main id="main-content">
+
+  <!-- HERO -->
+  <section id="hero" class="hero" aria-labelledby="hero-title">
+    <div class="hero-inner">
+      <span class="badge" data-fr="Étudiant L2 en informatique · Disponible en freelance" data-en="CS Student L2 · Available for freelance">CS Student L2 · Available for freelance</span>
+      <h1 id="hero-title">Hi, I'm <span class="grad">Amine Baik</span></h1>
+      <p class="hero-tagline" data-fr="Je code. Je construis. Je livre." data-en="I code. I build. I deliver.">I code. I build. I deliver.</p>
+      <p class="hero-proof" data-fr="Python · Java · SQL · HTML · CSS · JavaScript · Disponible pour vos projets" data-en="Python · Java · SQL · HTML · CSS · JavaScript · Available for your projects">Python · Java · SQL · HTML · CSS · JavaScript · Available for your projects</p>
+      <div class="hero-stack" aria-label="Tech stack">
+        <span>Python</span>
+        <span>Java</span>
+        <span>SQL</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Selenium</span>
+        <span>pandas</span>
+      </div>
+      <div class="hero-btns">
+        <a href="#projects" class="btn" data-fr="Voir mes projets" data-en="See my work">See my work</a>
+        <a href="#contact"  class="btn btn-outline" data-fr="Me contacter" data-en="Hire me">Hire me</a>
+      </div>
+    </div>
+    <div class="scroll-hint" aria-hidden="true">scroll</div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" aria-labelledby="skills-title">
+    <div class="reveal">
+      <p class="section-label" data-fr="Ce que je maîtrise" data-en="What I know">What I know</p>
+      <h2 id="skills-title" data-fr="Compétences techniques" data-en="Technical Skills">Technical Skills</h2>
+      <p class="section-sub" data-fr="Des langages et outils utilisés sur de vrais projets" data-en="Languages and tools used on real projects">Languages and tools used on real projects</p>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 12h8M12 8l4 4-4 4"/></svg>
+          </div>
+          <h3>Python</h3>
+          <p data-fr="Langage principal" data-en="Main language">Main language</p>
+          <span class="skill-level">Scraping · Automation · Data</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <h3>Java</h3>
+          <p data-fr="Programmation orientée objet" data-en="Object-oriented programming">Object-oriented programming</p>
+          <span class="skill-level">OOP · Swing · MVC</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="12" rx="10" ry="4"/><path d="M2 12c0 2.21 4.48 4 10 4s10-1.79 10-4"/><path d="M2 12v4c0 2.21 4.48 4 10 4s10-1.79 10-4v-4"/></svg>
+          </div>
+          <h3>SQL</h3>
+          <p data-fr="Bases de données relationnelles" data-en="Relational databases">Relational databases</p>
+          <span class="skill-level" data-fr="Modélisation · Requêtes · Normalisation" data-en="Modeling · Queries · Normalization">Modeling · Queries · Normalization</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+          </div>
+          <h3>HTML / CSS</h3>
+          <p data-fr="Développement front-end" data-en="Front-end development">Front-end development</p>
+          <span class="skill-level" data-fr="Responsive · Animations · Portfolio" data-en="Responsive · Animations · Portfolio">Responsive · Animations · Portfolio</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>JavaScript</h3>
+          <p data-fr="Scripts & interactivité" data-en="Scripts & interactivity">Scripts & interactivity</p>
+          <span class="skill-level" data-fr="Vanilla JS · DOM · Événements" data-en="Vanilla JS · DOM · Events">Vanilla JS · DOM · Events</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+          </div>
+          <h3>Selenium · pandas</h3>
+          <p data-fr="Librairies Python" data-en="Python libraries">Python libraries</p>
+          <span class="skill-level" data-fr="Scraping · Nettoyage · Export Excel" data-en="Scraping · Cleaning · Excel Export">Scraping · Cleaning · Excel Export</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" aria-labelledby="projects-title">
+    <div class="reveal">
+      <p class="section-label" data-fr="Ce que j'ai construit" data-en="What I've built">What I've built</p>
+      <h2 id="projects-title" data-fr="Projets" data-en="Projects">Projects</h2>
+      <p class="section-sub" data-fr="Problèmes réels · Solutions techniques · Résultats mesurables" data-en="Real problems · Technical solutions · Measurable results">Real problems · Technical solutions · Measurable results</p>
+      <div class="projects-grid">
+
+        <!-- AMAZON -->
+        <article class="project-card" aria-labelledby="proj-amazon">
+          <div class="project-top">
+            <span class="project-tag tag-python">Python · Selenium</span>
+            <span class="project-lang">Selenium · pandas</span>
+          </div>
+          <h3 id="proj-amazon">Amazon.fr — Laptop Scraper</h3>
+          <p data-fr="Amazon retourne un status 202 et bloque les requêtes automatiques. Solution : suppression de la signature WebDriver via CDP, rotation d'User-Agent et pauses aléatoires. Prix extraits depuis des spans masqués via JavaScript." data-en="Amazon returns status 202 and blocks automated requests. Solution: WebDriver signature removal via CDP, User-Agent rotation and randomized delays. Prices extracted from JS-hidden spans via JavaScript execution.">Amazon returns status 202 and blocks automated requests. Solution: WebDriver signature removal via CDP, User-Agent rotation and randomized delays. Prices extracted from JS-hidden spans via JavaScript execution.</p>
+          <div class="project-challenges">
+            <span data-fr="Anti-bot contourné" data-en="Anti-bot bypassed">Anti-bot bypassed</span>
+            <span data-fr="Signature WebDriver supprimée" data-en="WebDriver signature removed">WebDriver signature removed</span>
+            <span data-fr="Prix JS-hidden extraits" data-en="JS-hidden prices extracted">JS-hidden prices extracted</span>
+          </div>
+          <div class="project-stats">
+            <span><strong>58</strong> <span data-fr="produits" data-en="products">products</span></span>
+            <span><strong>98%</strong> <span data-fr="complétude" data-en="completeness">completeness</span></span>
+            <span><strong>90€ → 1 499€</strong></span>
+          </div>
+        </article>
+
+        <!-- CDISCOUNT -->
+        <article class="project-card" aria-labelledby="proj-cdiscount">
+          <div class="project-top">
+            <span class="project-tag tag-python">Python · Selenium</span>
+            <span class="project-lang">Selenium · pandas</span>
+          </div>
+          <h3 id="proj-cdiscount">Cdiscount.fr — Laptop Scraper</h3>
+          <p data-fr="Page de 14 Ko reçue avec requests (aucun produit). Le contenu est entièrement rendu en JavaScript. Solution : Selenium avec scroll progressif, détection dynamique des classes CSS générées et extraction multi-sélecteurs avec fallback." data-en="14KB page received with requests (zero products). Content is fully JavaScript-rendered. Solution: Selenium with progressive scrolling, dynamic detection of generated CSS classes and multi-selector extraction with fallback.">14KB page received with requests (zero products). Content is fully JavaScript-rendered. Solution: Selenium with progressive scrolling, dynamic detection of generated CSS classes and multi-selector extraction with fallback.</p>
+          <div class="project-challenges">
+            <span data-fr="JS rendering contourné" data-en="JS rendering bypassed">JS rendering bypassed</span>
+            <span data-fr="Classes CSS dynamiques détectées" data-en="Dynamic CSS classes detected">Dynamic CSS classes detected</span>
+            <span data-fr="100% données extraites" data-en="100% data extracted">100% data extracted</span>
+          </div>
+          <div class="project-stats">
+            <span><strong>120</strong> <span data-fr="produits" data-en="products">products</span></span>
+            <span><strong>100%</strong> <span data-fr="complétude" data-en="completeness">completeness</span></span>
+            <span><strong>199€ → 2 954€</strong></span>
+          </div>
+        </article>
+
+        <!-- SOKOBAN -->
+        <article class="project-card" aria-labelledby="proj-sokoban">
+          <div class="project-top">
+            <span class="project-tag tag-java">Java · Swing</span>
+            <span class="project-lang">OOP · MVC</span>
+          </div>
+          <h3 id="proj-sokoban" data-fr="Sokoban — Jeu de puzzle en Java" data-en="Sokoban — Java Puzzle Game">Sokoban — Java Puzzle Game</h3>
+          <p data-fr="Implémentation complète du jeu Sokoban avec une architecture MVC en trois packages : logique de jeu (modèle), affichage terminal et interface graphique Swing. Trois niveaux, compteur de mouvements, fonction restart et progression automatique au niveau suivant." data-en="Full Sokoban implementation with MVC architecture across three packages: game logic (model), terminal display and Swing graphical interface. Three levels, move counter, restart function and automatic level progression.">Full Sokoban implementation with MVC architecture across three packages: game logic (model), terminal display and Swing graphical interface. Three levels, move counter, restart function and automatic level progression.</p>
+          <div class="project-challenges">
+            <span data-fr="Architecture MVC — 3 packages" data-en="MVC architecture — 3 packages">MVC architecture — 3 packages</span>
+            <span data-fr="Interface graphique Swing" data-en="Swing graphical interface">Swing graphical interface</span>
+            <span data-fr="Restart & progression automatique" data-en="Restart & automatic progression">Restart & automatic progression</span>
+          </div>
+          <div class="project-stats">
+            <span><strong>3</strong> <span data-fr="niveaux" data-en="levels">levels</span></span>
+            <span><strong>25</strong> <span data-fr="étapes" data-en="steps">steps</span></span>
+            <span><strong>2</strong> <span data-fr="modes" data-en="modes">modes</span></span>
+          </div>
+        </article>
+
+        <!-- BOOKS -->
+        <article class="project-card" aria-labelledby="proj-books">
+          <div class="project-top">
+            <span class="project-tag tag-python">Python · BeautifulSoup</span>
+            <span class="project-lang">requests · pandas</span>
+          </div>
+          <h3 id="proj-books" data-fr="Book Scraper — Pipeline complet" data-en="Book Scraper — Full Pipeline">Book Scraper — Full Pipeline</h3>
+          <p data-fr="Pipeline end-to-end : scraping multi-pages, nettoyage automatique (prix texte → float, encodage, espaces), déduplication et export Excel structuré en une commande." data-en="End-to-end pipeline: multi-page scraping, automatic cleaning (text prices → float, encoding, whitespace), deduplication and structured Excel export in one command.">End-to-end pipeline: multi-page scraping, automatic cleaning (text prices → float, encoding, whitespace), deduplication and structured Excel export in one command.</p>
+          <div class="project-stats">
+            <span><strong>100+</strong> <span data-fr="livres" data-en="books">books</span></span>
+            <span><strong>5</strong> <span data-fr="colonnes" data-en="columns">columns</span></span>
+            <span><strong>0</strong> <span data-fr="erreurs" data-en="errors">errors</span></span>
+          </div>
+        </article>
+
+        <!-- UNIVERSITY DB -->
+        <article class="project-card" aria-labelledby="proj-univ">
+          <div class="project-top">
+            <span class="project-tag tag-sql">SQL</span>
+            <span class="project-lang" data-fr="Modélisation · Normalisation" data-en="Modeling · Normalization">Modeling · Normalization</span>
+          </div>
+          <h3 id="proj-univ" data-fr="Gestion Recherche Universitaire" data-en="University Research Management">University Research Management</h3>
+          <p data-fr="Base de données relationnelle complète pour gérer chercheurs, publications et projets universitaires. Modélisation, normalisation et requêtes complexes." data-en="Full relational database to manage researchers, publications and university projects. Modeling, normalization and complex queries.">Full relational database to manage researchers, publications and university projects. Modeling, normalization and complex queries.</p>
+        </article>
+
+        <!-- ACADEMIC -->
+        <article class="project-card" aria-labelledby="proj-academic">
+          <div class="project-top">
+            <span class="project-tag tag-web">HTML · CSS · JS · Python</span>
+            <span class="project-lang">Academic · L1 / L2</span>
+          </div>
+          <h3 id="proj-academic" data-fr="Projets académiques" data-en="Academic Projects">Academic Projects</h3>
+          <p data-fr="Same Game (Python) · Bataille Navale (HTML/CSS) · Jeu de la Vie (Python) · Tron multijoueur (JavaScript)" data-en="Same Game (Python) · Battleship (HTML/CSS) · Game of Life (Python) · Multiplayer Tron (JavaScript)">Same Game (Python) · Battleship (HTML/CSS) · Game of Life (Python) · Multiplayer Tron (JavaScript)</p>
+        </article>
+
+      </div>
+
+      <div class="stats-row" role="list" aria-label="Key metrics">
+        <div class="stat" role="listitem"><div class="num">6</div><p data-fr="Langages maîtrisés" data-en="Languages mastered">Languages mastered</p></div>
+        <div class="stat" role="listitem"><div class="num">6+</div><p data-fr="Projets réalisés" data-en="Projects completed">Projects completed</p></div>
+        <div class="stat" role="listitem"><div class="num">270+</div><p data-fr="Produits scrapés" data-en="Products scraped">Products scraped</p></div>
+        <div class="stat" role="listitem"><div class="num">0</div><p data-fr="Erreurs livrées" data-en="Errors delivered">Errors delivered</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" aria-labelledby="exp-title">
+    <div class="reveal">
+      <p class="section-label" data-fr="Mon parcours" data-en="My background">My background</p>
+      <h2 id="exp-title" data-fr="Expérience & Soft Skills" data-en="Experience & Soft Skills">Experience & Soft Skills</h2>
+      <p class="section-sub" data-fr="Des environnements exigeants qui forgent de vraies qualités professionnelles" data-en="Demanding environments that built real professional qualities">Demanding environments that built real professional qualities</p>
+      <div class="exp-list">
+
+        <div class="exp-card">
+          <div class="exp-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="exp-body">
+            <h3 data-fr="Agent de sécurité — Rigueur & responsabilité" data-en="Security Officer — Discipline & responsibility">Security Officer — Discipline & responsibility</h3>
+            <p data-fr="Surveillance et contrôle d'accès. Développé : sens des responsabilités, réactivité sous pression et rigueur opérationnelle." data-en="Surveillance and access control. Built: sense of responsibility, reactivity under pressure and operational precision.">Surveillance and access control. Built: sense of responsibility, reactivity under pressure and operational precision.</p>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          </div>
+          <div class="exp-body">
+            <h3 data-fr="Manœuvre BTP — Endurance & travail d'équipe" data-en="Construction Worker — Endurance & teamwork">Construction Worker — Endurance & teamwork</h3>
+            <p data-fr="Chantiers en conditions difficiles. Développé : endurance, esprit d'équipe et capacité à livrer dans des délais serrés." data-en="Demanding building sites. Built: endurance, team spirit and ability to deliver under tight deadlines.">Demanding building sites. Built: endurance, team spirit and ability to deliver under tight deadlines.</p>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </div>
+          <div class="exp-body">
+            <h3 data-fr="Épicier — Relation client & communication" data-en="Grocery Store — Customer relations & communication">Grocery Store — Customer relations & communication</h3>
+            <p data-fr="Gestion des stocks, relation client directe. Développé : communication, sens commercial et gestion des priorités." data-en="Stock management and direct customer relations. Built: communication, commercial awareness and priority management.">Stock management and direct customer relations. Built: communication, commercial awareness and priority management.</p>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <div class="exp-body">
+            <h3 data-fr="Travail manuel difficile — Persévérance & résilience" data-en="Hard manual labor — Perseverance & resilience">Hard manual labor — Perseverance & resilience</h3>
+            <p data-fr="Conditions extrêmes. Développé : persévérance, résilience et capacité à maintenir la qualité sous contrainte." data-en="Extreme conditions. Built: perseverance, resilience and ability to maintain quality under pressure.">Extreme conditions. Built: perseverance, resilience and ability to maintain quality under pressure.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" aria-labelledby="about-title">
+    <div class="reveal">
+      <p class="section-label" data-fr="Qui je suis" data-en="Who I am">Who I am</p>
+      <h2 id="about-title" data-fr="À propos" data-en="About me">About me</h2>
+      <p class="section-sub" data-fr="Références clients, centres d'intérêt et langues parlées" data-en="Client references, interests and languages">Client references, interests and languages</p>
+
+      <div class="refs-box">
+        <h3 class="refs-title"><span data-fr="Références clients" data-en="Client References">Client References</span></h3>
+        <div class="refs-list">
+
+          <div class="ref-card">
+            <div class="ref-avatar">LB</div>
+            <div class="ref-body">
+              <p class="ref-name">Lea Benfarhat</p>
+              <p class="ref-desc" data-fr="Pipeline Python complet — extraction automatisée de 100+ produits e-commerce, nettoyage et livraison Excel sans erreurs." data-en="Full Python pipeline — automated extraction of 100+ e-commerce products, cleaning and error-free Excel delivery.">Full Python pipeline — automated extraction of 100+ e-commerce products, cleaning and error-free Excel delivery.</p>
+              <div class="ref-tags">
+                <span class="ref-tag tag-green" data-fr="Terminé" data-en="Completed">Completed</span>
+                <span class="ref-tag tag-purple">Python · Scraping</span>
+              </div>
+            </div>
+            <div class="ref-stars" aria-label="5 out of 5 stars">5 / 5</div>
+          </div>
+
+          <div class="ref-card">
+            <div class="ref-avatar">KH</div>
+            <div class="ref-body">
+              <p class="ref-name">Kenza Hourga</p>
+              <p class="ref-desc" data-fr="Nettoyage d'un fichier Excel de 500 lignes — suppression des doublons, correction des types et des formats incorrects." data-en="Cleaned a 500-row Excel file — removed duplicates, fixed data types and incorrect formats.">Cleaned a 500-row Excel file — removed duplicates, fixed data types and incorrect formats.</p>
+              <div class="ref-tags">
+                <span class="ref-tag tag-green" data-fr="Terminé" data-en="Completed">Completed</span>
+                <span class="ref-tag tag-purple" data-fr="Python · Nettoyage" data-en="Python · Cleaning">Python · Cleaning</span>
+              </div>
+            </div>
+            <div class="ref-stars" aria-label="5 out of 5 stars">5 / 5</div>
+          </div>
+
+          <div class="ref-card">
+            <div class="ref-avatar">BL</div>
+            <div class="ref-body">
+              <p class="ref-name">Boualem Lamrioui</p>
+              <p class="ref-desc" data-fr="Fusion de 3 fichiers Excel — calcul automatique TVA, marges et totaux. Livraison en 24h." data-en="Merged 3 Excel files — automated VAT, margins and totals calculation. Delivered within 24h.">Merged 3 Excel files — automated VAT, margins and totals calculation. Delivered within 24h.</p>
+              <div class="ref-tags">
+                <span class="ref-tag tag-green" data-fr="Terminé" data-en="Completed">Completed</span>
+                <span class="ref-tag tag-purple">Python · pandas</span>
+              </div>
+            </div>
+            <div class="ref-stars" aria-label="5 out of 5 stars">5 / 5</div>
+          </div>
+
+          <div class="ref-card">
+            <div class="ref-avatar">AB</div>
+            <div class="ref-body">
+              <p class="ref-name">Anis Belil</p>
+              <p class="ref-desc" data-fr="Extraction Selenium des avis clients d'un site concurrent — notes, textes et dates en Excel structuré." data-en="Selenium extraction of customer reviews from a competitor site — ratings, text and dates to structured Excel.">Selenium extraction of customer reviews from a competitor site — ratings, text and dates to structured Excel.</p>
+              <div class="ref-tags">
+                <span class="ref-tag tag-green" data-fr="Terminé" data-en="Completed">Completed</span>
+                <span class="ref-tag tag-purple">Python · Selenium</span>
+              </div>
+            </div>
+            <div class="ref-stars" aria-label="5 out of 5 stars">5 / 5</div>
+          </div>
+
+          <div class="ref-card">
+            <div class="ref-avatar">AA</div>
+            <div class="ref-body">
+              <p class="ref-name">Aymen Azlef</p>
+              <p class="ref-desc" data-fr="Conversion CSV mal formaté (encodage, séparateurs, types mixtes) en Excel propre avec colonnes renommées et triées." data-en="Converted badly formatted CSV (encoding, separators, mixed types) to clean Excel with renamed and sorted columns.">Converted badly formatted CSV (encoding, separators, mixed types) to clean Excel with renamed and sorted columns.</p>
+              <div class="ref-tags">
+                <span class="ref-tag tag-green" data-fr="Terminé" data-en="Completed">Completed</span>
+                <span class="ref-tag tag-purple">Python · pandas</span>
+              </div>
+            </div>
+            <div class="ref-stars" aria-label="5 out of 5 stars">5 / 5</div>
+          </div>
+
+          <div class="ref-card">
+            <div class="ref-avatar">AZ</div>
+            <div class="ref-body">
+              <p class="ref-name">Ayoub Azzouzi</p>
+              <p class="ref-desc" data-fr="Script Python de veille tarifaire — vérifie les prix d'un concurrent chaque jour et génère un rapport Excel avec les variations." data-en="Python price monitoring script — checks competitor prices daily and generates an Excel report with price changes.">Python price monitoring script — checks competitor prices daily and generates an Excel report with price changes.</p>
+              <div class="ref-tags">
+                <span class="ref-tag tag-green" data-fr="Terminé" data-en="Completed">Completed</span>
+                <span class="ref-tag tag-purple">Python · Selenium</span>
+              </div>
+            </div>
+            <div class="ref-stars" aria-label="5 out of 5 stars">5 / 5</div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="hobbies-grid">
+        <div class="hobby-card">
+          <h3 data-fr="Sports" data-en="Sports">Sports</h3>
+          <div class="hobby-items">
+            <span class="hobby-tag" data-fr="Judo — Ceinture noire" data-en="Judo — Black belt">Judo — Black belt</span>
+            <span class="hobby-tag" data-fr="Musculation" data-en="Weightlifting">Weightlifting</span>
+            <span class="hobby-tag" data-fr="Natation" data-en="Swimming">Swimming</span>
+            <span class="hobby-tag" data-fr="Vélo" data-en="Cycling">Cycling</span>
+          </div>
+        </div>
+        <div class="hobby-card">
+          <h3 data-fr="Langues" data-en="Languages">Languages</h3>
+          <div class="lang-list">
+            <div class="lang-tag"><span data-fr="Français" data-en="French">French</span><span class="lvl lvl-native" data-fr="Courant" data-en="Fluent">Fluent</span></div>
+            <div class="lang-tag"><span data-fr="Arabe" data-en="Arabic">Arabic</span><span class="lvl lvl-native" data-fr="Courant" data-en="Fluent">Fluent</span></div>
+            <div class="lang-tag"><span data-fr="Kabyle" data-en="Kabyle">Kabyle</span><span class="lvl lvl-native" data-fr="Courant" data-en="Fluent">Fluent</span></div>
+            <div class="lang-tag"><span data-fr="Anglais" data-en="English">English</span><span class="lvl lvl-good" data-fr="Bon niveau" data-en="Good level">Good level</span></div>
+            <div class="lang-tag"><span data-fr="Espagnol" data-en="Spanish">Spanish</span><span class="lvl lvl-beginner" data-fr="Débutant" data-en="Beginner">Beginner</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process" aria-labelledby="process-title">
+    <div class="reveal">
+      <p class="section-label" data-fr="Comment je travaille" data-en="How I work">How I work</p>
+      <h2 id="process-title" data-fr="Processus" data-en="Process">Process</h2>
+      <p class="section-sub" data-fr="Simple · Rapide · Livraison garantie" data-en="Simple · Fast · Guaranteed delivery">Simple · Fast · Guaranteed delivery</p>
+      <div class="process-steps">
+        <div class="step">
+          <div class="dot" aria-hidden="true">1</div>
+          <h3 data-fr="Tu définis le besoin" data-en="You define the need">You define the need</h3>
+          <p data-fr="Objectif · contraintes · délai" data-en="Goal · constraints · deadline">Goal · constraints · deadline</p>
+        </div>
+        <div class="step">
+          <div class="dot" aria-hidden="true">2</div>
+          <h3 data-fr="Je propose une solution" data-en="I propose a solution">I propose a solution</h3>
+          <p data-fr="Langage · outils · approche" data-en="Language · tools · approach">Language · tools · approach</p>
+        </div>
+        <div class="step">
+          <div class="dot" aria-hidden="true">3</div>
+          <h3 data-fr="Je développe" data-en="I develop">I develop</h3>
+          <p data-fr="Code propre · testé · documenté" data-en="Clean code · tested · documented">Clean code · tested · documented</p>
+        </div>
+        <div class="step">
+          <div class="dot" aria-hidden="true">4</div>
+          <h3 data-fr="Tu reçois le livrable" data-en="You receive the deliverable">You receive the deliverable</h3>
+          <p data-fr="Propre · fonctionnel · sous 24h" data-en="Clean · functional · within 24h">Clean · functional · within 24h</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" aria-labelledby="contact-title">
+    <div class="reveal">
+      <div class="contact-box">
+        <p class="section-label" style="margin-bottom:16px" data-fr="Travaillons ensemble" data-en="Get in touch">Get in touch</p>
+        <h2 id="contact-title" data-fr="Un projet en tête ?" data-en="Got a project in mind?">Got a project in mind?</h2>
+        <p data-fr="Décrivez votre besoin — scraping, automatisation, base de données, web — je réponds sous 24h." data-en="Describe your need — scraping, automation, database, web — I'll reply within 24h.">Describe your need — scraping, automation, database, web — I'll reply within 24h.</p>
+        <a href="mailto:baikamine2023@outlook.com" class="btn" aria-label="Send email to Amine Baik">baikamine2023@outlook.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GITHUB -->
+  <section id="github" aria-labelledby="github-title">
+    <div class="reveal">
+      <div class="github-box">
+        <p class="section-label" data-fr="Mon code source" data-en="My source code">My source code</p>
+        <h2 id="github-title" data-fr="Retrouvez tous mes projets sur GitHub" data-en="Find all my projects on GitHub">Find all my projects on GitHub</h2>
+        <p data-fr="Le code source de mes projets Python, Java et Web est disponible publiquement sur mon profil GitHub." data-en="The source code of my Python, Java and Web projects is publicly available on my GitHub profile.">The source code of my Python, Java and Web projects is publicly available on my GitHub profile.</p>
+        <a href="https://github.com/amine-baik" target="_blank" rel="noopener noreferrer" class="btn">
+          github.com/amine-baik
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer role="contentinfo">
+  <p>
+    Amine Baik &copy; 2025 &middot;
+    <span data-fr="Étudiant en informatique & Développeur Freelance" data-en="CS Student & Freelance Developer">CS Student & Freelance Developer</span>
+  </p>
+  <div class="footer-links">
+    <a href="https://github.com/amine-baik" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a href="https://www.linkedin.com/in/amine-baik-54aa93363" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a href="mailto:baikamine2023@outlook.com">Email</a>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
