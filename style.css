@@ -253,3 +253,14 @@ footer { text-align: center; padding: 28px 20px; color: var(--muted); font-size:
 @media (max-width: 768px) {
   .github-box { padding: 40px 20px; }
 }
+/* ── FOOTER ICONS ──────────────────────────────────────── */
+.footer-links a {
+  color: var(--muted);
+  transition: color .2s, transform .2s;
+  display: flex;
+  align-items: center;
+}
+.footer-links a:hover {
+  color: var(--accent);
+  transform: translateY(-2px);
+}
