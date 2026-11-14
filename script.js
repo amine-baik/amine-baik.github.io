@@ -116,8 +116,8 @@ function setLang(lang) {
   const metaDesc = document.querySelector('meta[name="description"]');
   if (metaDesc) {
     metaDesc.setAttribute('content', lang === 'fr'
-      ? 'Amine Baik — Développeur Python & Web. Scraping, automatisation, bases de données, développement web. Disponible en freelance.'
-      : 'Amine Baik — Python & Web Developer. Scraping, automation, databases, web development. Available for freelance.');
+      ? 'Amine Baik — Étudiant en L3 Informatique. Python, Java, C, SQL, web, Linux, réseaux et cybersécurité.'
+      : 'Amine Baik — Computer Science student. Python, Java, C, SQL, web, Linux, networking and cybersecurity.');
   }
 }
 
@@ -156,7 +156,7 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 // ── CARD GLOW — desktop uniquement ───────────────────────────
 if (window.matchMedia('(hover: hover)').matches) {
   document.querySelectorAll(
-    '.skill-card, .project-card, .exp-card, .hobby-card, .ref-card'
+    '.skill-card, .project-card, .cyber-card, .exp-card, .hobby-card, .ref-card'
   ).forEach(card => {
     card.addEventListener('mousemove', e => {
       const r = card.getBoundingClientRect();

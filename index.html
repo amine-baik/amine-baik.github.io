@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Amine Baik — Développeur Python & Web. Scraping, automatisation, bases de données, développement web. Disponible en freelance."/>
+  <meta name="description" content="Amine Baik — Étudiant en L3 Informatique. Python, Java, C, SQL, web, Linux, réseaux et cybersécurité."/>
   <meta name="robots" content="index, follow"/>
-  <meta property="og:title" content="Amine Baik — Python & Web Developer"/>
-  <meta property="og:description" content="Python & Web Developer available for freelance missions. Scraping, automation, databases, web development."/>
+  <meta property="og:title" content="Amine Baik — Portfolio"/>
+  <meta property="og:description" content="Computer Science student. Python, Java, C, SQL, web, Linux, networking and cybersecurity."/>
   <meta property="og:type" content="website"/>
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="Amine Baik — Python & Web Developer"/>
+  <meta name="twitter:title" content="Amine Baik — Portfolio"/>
   <link rel="canonical" href="https://amine-baik.github.io/"/>
-  <title>Amine Baik — Python & Web Developer</title>
+  <title>Amine Baik — Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet"/>
@@ -30,6 +30,7 @@
   <ul id="nav-menu">
     <li><a href="#skills"     data-fr="Compétences" data-en="Skills">Skills</a></li>
     <li><a href="#projects"   data-fr="Projets"     data-en="Projects">Projects</a></li>
+    <li><a href="#cyber"      data-fr="Cybersécurité" data-en="Cybersecurity">Cybersecurity</a></li>
     <li><a href="#experience" data-fr="Expérience"  data-en="Experience">Experience</a></li>
     <li><a href="#about"      data-fr="À propos"    data-en="About">About</a></li>
     <li><a href="#contact"    data-fr="Contact"     data-en="Contact">Contact</a></li>
@@ -47,10 +48,10 @@
   <!-- HERO -->
   <section id="hero" class="hero" aria-labelledby="hero-title">
     <div class="hero-inner">
-      <span class="badge" data-fr="Étudiant L2 en informatique · Disponible en freelance" data-en="CS Student L2 · Available for freelance">CS Student L2 · Available for freelance</span>
+      <span class="badge" data-fr="Étudiant L3 Informatique · Passionné de cybersécurité" data-en="Computer Science student (3rd year) · Cybersecurity enthusiast">Computer Science student (3rd year) · Cybersecurity enthusiast</span>
       <h1 id="hero-title">Hi, I'm <span class="grad">Amine Baik</span></h1>
       <p class="hero-tagline" data-fr="Je code. Je construis. Je livre." data-en="I code. I build. I deliver.">I code. I build. I deliver.</p>
-      <p class="hero-proof" data-fr="Python · Java · SQL · HTML · CSS · JavaScript · Disponible pour vos projets" data-en="Python · Java · SQL · HTML · CSS · JavaScript · Available for your projects">Python · Java · SQL · HTML · CSS · JavaScript · Available for your projects</p>
+      <p class="hero-proof" data-fr="Développement · Données · Réseaux · Sécurité" data-en="Development · Data · Networking · Security">Development · Data · Networking · Security</p>
       <div class="hero-stack" aria-label="Tech stack">
         <span>Python</span>
         <span>Java</span>
@@ -58,12 +59,14 @@
         <span>HTML</span>
         <span>CSS</span>
         <span>JavaScript</span>
+        <span>C</span>
+        <span>Linux</span>
         <span>Selenium</span>
         <span>pandas</span>
       </div>
       <div class="hero-btns">
         <a href="#projects" class="btn" data-fr="Voir mes projets" data-en="See my work">See my work</a>
-        <a href="#contact"  class="btn btn-outline" data-fr="Me contacter" data-en="Hire me">Hire me</a>
+        <a href="#contact"  class="btn btn-outline" data-fr="Me contacter" data-en="Contact me">Contact me</a>
       </div>
     </div>
     <div class="scroll-hint" aria-hidden="true">scroll</div>
@@ -131,6 +134,24 @@
           <span class="skill-level" data-fr="Scraping · Nettoyage · Export Excel" data-en="Scraping · Cleaning · Excel Export">Scraping · Cleaning · Excel Export</span>
         </div>
 
+        <div class="skill-card">
+          <div class="skill-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 7a6 6 0 1 0 0 10"/></svg>
+          </div>
+          <h3>C</h3>
+          <p data-fr="Programmation bas niveau" data-en="Low-level programming">Low-level programming</p>
+          <span class="skill-level" data-fr="Structures de données · Algorithmique" data-en="Data structures · Algorithms">Data structures · Algorithms</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <h3 data-fr="Linux · Réseaux · Cyber" data-en="Linux · Networks · Cyber">Linux · Networks · Cyber</h3>
+          <p data-fr="Certifications Cisco NetAcad" data-en="Cisco NetAcad certifications">Cisco NetAcad certifications</p>
+          <span class="skill-level" data-fr="Cybersécurité · Réseaux · Git" data-en="Cybersecurity · Networking · Git">Cybersecurity · Networking · Git</span>
+        </div>
+
       </div>
     </div>
   </section>
@@ -150,11 +171,11 @@
             <span class="project-lang">Selenium · pandas</span>
           </div>
           <h3 id="proj-amazon">Amazon.fr — Laptop Scraper</h3>
-          <p data-fr="Amazon retourne un status 202 et bloque les requêtes automatiques. Solution : suppression de la signature WebDriver via CDP, rotation d'User-Agent et pauses aléatoires. Prix extraits depuis des spans masqués via JavaScript." data-en="Amazon returns status 202 and blocks automated requests. Solution: WebDriver signature removal via CDP, User-Agent rotation and randomized delays. Prices extracted from JS-hidden spans via JavaScript execution.">Amazon returns status 202 and blocks automated requests. Solution: WebDriver signature removal via CDP, User-Agent rotation and randomized delays. Prices extracted from JS-hidden spans via JavaScript execution.</p>
+          <p data-fr="Collecte des ordinateurs portables d'Amazon.fr pour comparer les prix. Les pages étant chargées dynamiquement, j'ai utilisé Selenium avec exécution JavaScript pour lire les prix, des pauses entre les pages pour ne pas surcharger le site, puis un export Excel prêt à analyser." data-en="Collected laptops from Amazon.fr to compare prices. Since pages load dynamically, I used Selenium with JavaScript execution to read prices, pauses between pages to avoid overloading the site, then an Excel export ready for analysis.">Collected laptops from Amazon.fr to compare prices. Since pages load dynamically, I used Selenium with JavaScript execution to read prices, pauses between pages to avoid overloading the site, then an Excel export ready for analysis.</p>
           <div class="project-challenges">
-            <span data-fr="Anti-bot contourné" data-en="Anti-bot bypassed">Anti-bot bypassed</span>
-            <span data-fr="Signature WebDriver supprimée" data-en="WebDriver signature removed">WebDriver signature removed</span>
-            <span data-fr="Prix JS-hidden extraits" data-en="JS-hidden prices extracted">JS-hidden prices extracted</span>
+            <span data-fr="Pages dynamiques gérées" data-en="Dynamic pages handled">Dynamic pages handled</span>
+            <span data-fr="Prix lus via JavaScript" data-en="Prices read via JavaScript">Prices read via JavaScript</span>
+            <span data-fr="Export Excel propre" data-en="Clean Excel export">Clean Excel export</span>
           </div>
           <div class="project-stats">
             <span><strong>58</strong> <span data-fr="produits" data-en="products">products</span></span>
@@ -170,9 +191,9 @@
             <span class="project-lang">Selenium · pandas</span>
           </div>
           <h3 id="proj-cdiscount">Cdiscount.fr — Laptop Scraper</h3>
-          <p data-fr="Page de 14 Ko reçue avec requests (aucun produit). Le contenu est entièrement rendu en JavaScript. Solution : Selenium avec scroll progressif, détection dynamique des classes CSS générées et extraction multi-sélecteurs avec fallback." data-en="14KB page received with requests (zero products). Content is fully JavaScript-rendered. Solution: Selenium with progressive scrolling, dynamic detection of generated CSS classes and multi-selector extraction with fallback.">14KB page received with requests (zero products). Content is fully JavaScript-rendered. Solution: Selenium with progressive scrolling, dynamic detection of generated CSS classes and multi-selector extraction with fallback.</p>
+          <p data-fr="Avec une simple requête, la page reçue ne contenait aucun produit : tout le contenu est affiché en JavaScript. Solution : Selenium avec défilement progressif, détection des classes CSS générées et extraction multi-sélecteurs avec solution de repli." data-en="A plain request returned a page with zero products: all content is rendered in JavaScript. Solution: Selenium with progressive scrolling, detection of generated CSS classes and multi-selector extraction with fallback.">A plain request returned a page with zero products: all content is rendered in JavaScript. Solution: Selenium with progressive scrolling, detection of generated CSS classes and multi-selector extraction with fallback.</p>
           <div class="project-challenges">
-            <span data-fr="JS rendering contourné" data-en="JS rendering bypassed">JS rendering bypassed</span>
+            <span data-fr="Rendu JavaScript géré" data-en="JavaScript rendering handled">JavaScript rendering handled</span>
             <span data-fr="Classes CSS dynamiques détectées" data-en="Dynamic CSS classes detected">Dynamic CSS classes detected</span>
             <span data-fr="100% données extraites" data-en="100% data extracted">100% data extracted</span>
           </div>
@@ -241,10 +262,58 @@
       </div>
 
       <div class="stats-row" role="list" aria-label="Key metrics">
-        <div class="stat" role="listitem"><div class="num">6</div><p data-fr="Langages maîtrisés" data-en="Languages mastered">Languages mastered</p></div>
+        <div class="stat" role="listitem"><div class="num">7</div><p data-fr="Langages utilisés" data-en="Languages used">Languages used</p></div>
         <div class="stat" role="listitem"><div class="num">6+</div><p data-fr="Projets réalisés" data-en="Projects completed">Projects completed</p></div>
         <div class="stat" role="listitem"><div class="num">270+</div><p data-fr="Produits scrapés" data-en="Products scraped">Products scraped</p></div>
-        <div class="stat" role="listitem"><div class="num">0</div><p data-fr="Erreurs livrées" data-en="Errors delivered">Errors delivered</p></div>
+        <div class="stat" role="listitem"><div class="num">3</div><p data-fr="Sites e-commerce analysés" data-en="E-commerce sites scraped">E-commerce sites scraped</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CYBER -->
+  <section id="cyber" aria-labelledby="cyber-title">
+    <div class="reveal">
+      <p class="section-label" data-fr="Sécurité informatique" data-en="Security">Security</p>
+      <h2 id="cyber-title" data-fr="Cybersécurité &amp; certifications" data-en="Cybersecurity &amp; certifications">Cybersecurity &amp; certifications</h2>
+      <p class="section-sub" data-fr="Ce que j'apprends en dehors des cours, sur des plateformes reconnues" data-en="What I learn outside of class, on recognized platforms">What I learn outside of class, on recognized platforms</p>
+      <div class="cyber-grid">
+
+        <article class="cyber-card">
+          <div class="cyber-top">
+            <span class="cyber-org">Cisco Networking Academy</span>
+            <span class="cyber-status status-done" data-fr="Obtenue" data-en="Earned">Earned</span>
+          </div>
+          <h3 data-fr="Certification Cybersécurité" data-en="Cybersecurity certification">Cybersecurity certification</h3>
+          <p data-fr="Menaces et attaques courantes, protection des données et des appareils, bonnes pratiques de sécurité." data-en="Common threats and attacks, protecting data and devices, security best practices.">Common threats and attacks, protecting data and devices, security best practices.</p>
+        </article>
+
+        <article class="cyber-card">
+          <div class="cyber-top">
+            <span class="cyber-org">Cisco Networking Academy</span>
+            <span class="cyber-status status-done" data-fr="Obtenue" data-en="Earned">Earned</span>
+          </div>
+          <h3 data-fr="Certification Réseaux" data-en="Networking certification">Networking certification</h3>
+          <p data-fr="Fonctionnement des réseaux, adressage IP, protocoles et configuration de base." data-en="How networks work, IP addressing, protocols and basic configuration.">How networks work, IP addressing, protocols and basic configuration.</p>
+        </article>
+
+        <article class="cyber-card">
+          <div class="cyber-top">
+            <span class="cyber-org">Root-Me</span>
+            <span class="cyber-status status-score">500+ points</span>
+          </div>
+          <h3 data-fr="Challenges de sécurité" data-en="Security challenges">Security challenges</h3>
+          <p data-fr="Plus de 500 points obtenus en résolvant des challenges de hacking éthique : web, cryptographie, réseau et programmation." data-en="Over 500 points earned by solving ethical hacking challenges: web, cryptography, networking and programming.">Over 500 points earned by solving ethical hacking challenges: web, cryptography, networking and programming.</p>
+        </article>
+
+        <article class="cyber-card">
+          <div class="cyber-top">
+            <span class="cyber-org">TryHackMe</span>
+            <span class="cyber-status status-progress" data-fr="En cours" data-en="In progress">In progress</span>
+          </div>
+          <h3 data-fr="Parcours d'introduction à la cybersécurité" data-en="Introductory cybersecurity path">Introductory cybersecurity path</h3>
+          <p data-fr="Premiers modules du parcours gratuit terminés : bases du web, des réseaux, de Linux et de la sécurité offensive et défensive." data-en="First modules of the free path completed: web, networking and Linux fundamentals, offensive and defensive security basics.">First modules of the free path completed: web, networking and Linux fundamentals, offensive and defensive security basics.</p>
+        </article>
+
       </div>
     </div>
   </section>
@@ -333,44 +402,13 @@
     </div>
   </section>
 
-  <!-- PROCESS -->
-  <section id="process" aria-labelledby="process-title">
-    <div class="reveal">
-      <p class="section-label" data-fr="Comment je travaille" data-en="How I work">How I work</p>
-      <h2 id="process-title" data-fr="Processus" data-en="Process">Process</h2>
-      <p class="section-sub" data-fr="Simple · Rapide · Livraison garantie" data-en="Simple · Fast · Guaranteed delivery">Simple · Fast · Guaranteed delivery</p>
-      <div class="process-steps">
-        <div class="step">
-          <div class="dot" aria-hidden="true">1</div>
-          <h3 data-fr="Tu définis le besoin" data-en="You define the need">You define the need</h3>
-          <p data-fr="Objectif · contraintes · délai" data-en="Goal · constraints · deadline">Goal · constraints · deadline</p>
-        </div>
-        <div class="step">
-          <div class="dot" aria-hidden="true">2</div>
-          <h3 data-fr="Je propose une solution" data-en="I propose a solution">I propose a solution</h3>
-          <p data-fr="Langage · outils · approche" data-en="Language · tools · approach">Language · tools · approach</p>
-        </div>
-        <div class="step">
-          <div class="dot" aria-hidden="true">3</div>
-          <h3 data-fr="Je développe" data-en="I develop">I develop</h3>
-          <p data-fr="Code propre · testé · documenté" data-en="Clean code · tested · documented">Clean code · tested · documented</p>
-        </div>
-        <div class="step">
-          <div class="dot" aria-hidden="true">4</div>
-          <h3 data-fr="Tu reçois le livrable" data-en="You receive the deliverable">You receive the deliverable</h3>
-          <p data-fr="Propre · fonctionnel · sous 24h" data-en="Clean · functional · within 24h">Clean · functional · within 24h</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- CONTACT -->
   <section id="contact" aria-labelledby="contact-title">
     <div class="reveal">
       <div class="contact-box">
-        <p class="section-label" style="margin-bottom:16px" data-fr="Travaillons ensemble" data-en="Get in touch">Get in touch</p>
-        <h2 id="contact-title" data-fr="Un projet en tête ?" data-en="Got a project in mind?">Got a project in mind?</h2>
-        <p data-fr="Décrivez votre besoin — scraping, automatisation, base de données, web — je réponds sous 24h." data-en="Describe your need — scraping, automation, database, web — I'll reply within 24h.">Describe your need — scraping, automation, database, web — I'll reply within 24h.</p>
+        <p class="section-label" style="margin-bottom:16px" data-fr="Me contacter" data-en="Get in touch">Get in touch</p>
+        <h2 id="contact-title" data-fr="Un stage, une question ?" data-en="An internship, a question?">An internship, a question?</h2>
+        <p data-fr="Je suis à la recherche d'opportunités en informatique et en cybersécurité. N'hésitez pas à m'écrire." data-en="I'm looking for opportunities in IT and cybersecurity. Feel free to reach out.">I'm looking for opportunities in IT and cybersecurity. Feel free to reach out.</p>
         <a href="mailto:baikamine2023@outlook.com" class="btn" aria-label="Send email to Amine Baik">baikamine2023@outlook.com</a>
       </div>
     </div>
@@ -392,8 +430,8 @@
 
 <footer role="contentinfo">
   <p>
-    Amine Baik &copy; 2025 &middot;
-    <span data-fr="Étudiant en informatique & Développeur Freelance" data-en="CS Student & Freelance Developer">CS Student & Freelance Developer</span>
+    Amine Baik &copy; 2026 &middot;
+    <span data-fr="Étudiant en informatique" data-en="Computer Science student">Computer Science student</span>
   </p>
   <div class="footer-links">
     <a href="https://github.com/amine-baik" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">

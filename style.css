@@ -93,6 +93,19 @@ section { padding: 96px 24px; max-width: 960px; margin: 0 auto; position: relati
 section h2 { font-family: 'DM Serif Display', serif; font-size: clamp(26px, 4vw, 36px); color: var(--text); margin-bottom: 10px; letter-spacing: -0.8px; }
 .section-sub { color: var(--muted); font-size: 15px; margin-bottom: 48px; }
 
+/* ── CYBER ─────────────────────────────────────────────── */
+.cyber-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.cyber-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px 24px; box-shadow: var(--shadow); transition: border-color .25s, transform .25s, box-shadow .25s; }
+.cyber-card:hover { border-color: var(--accent); transform: translateY(-3px); box-shadow: var(--shadow-md); }
+.cyber-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
+.cyber-org { font-size: 11px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.5px; }
+.cyber-status { font-size: 10px; font-weight: 700; padding: 3px 10px; border-radius: 999px; }
+.status-done     { background: rgba(5,150,105,0.08); color: #047857; }
+.status-score    { background: rgba(29,78,216,0.08); color: var(--accent); }
+.status-progress { background: rgba(180,83,9,0.08);  color: #92400e; }
+.cyber-card h3 { font-size: 15px; font-weight: 700; color: var(--text); margin-bottom: 6px; }
+.cyber-card p  { font-size: 13px; color: var(--muted); line-height: 1.65; }
+
 /* ── SKILLS ────────────────────────────────────────────── */
 .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(148px, 1fr)); gap: 12px; }
 .skill-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px 18px; transition: border-color .25s, transform .25s, box-shadow .25s; box-shadow: var(--shadow); }
@@ -223,6 +236,7 @@ footer { text-align: center; padding: 28px 20px; color: var(--muted); font-size:
   section { padding: 64px 20px; }
   .hero   { padding: 120px 20px 80px; }
   .projects-grid { grid-template-columns: 1fr; }
+  .cyber-grid    { grid-template-columns: 1fr; }
   .hobbies-grid  { grid-template-columns: 1fr; }
   .stats-row     { gap: 20px; padding: 20px; }
   .contact-box   { padding: 40px 20px; }
